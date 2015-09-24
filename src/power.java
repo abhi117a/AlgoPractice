@@ -1,0 +1,18 @@
+
+public class power {
+
+	private int pow(int base, int power){
+		if(power == 0) {
+			return 1;
+		}
+		else
+			return base * pow(base, --power);
+	}
+	
+	public static void main(String[] args) {
+		power pow1 = new power();
+
+		System.out.println(pow1.pow(3,3));
+	}
+
+}
